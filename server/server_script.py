@@ -20,7 +20,7 @@ import json
 
 import utility as utils
 
-# Define paths 
+# Define paths & Params
 classifier_path = "../models/classifier_ada.pkl"
 kmeans_path     = "../models/kmeans_model.pkl"
 kmeans_sets     = 360
@@ -81,7 +81,7 @@ def upload_image_base64():
   # Check if image data is present
   if image_file:
     now = datetime.datetime.now()
-    timestamp_format = "%Y-%m-%d_%H-%M-%S"  # Example format (YYYY-MM-DD_HH-MM-SS)
+    timestamp_format = "%Y-%m-%d_%H-%M-%S"  # format (YYYY-MM-DD_HH-MM-SS)
     timestamp_string = f"cache/{now.strftime(timestamp_format)}.jpg"
 
     # image_file.save(timestamp_string)
