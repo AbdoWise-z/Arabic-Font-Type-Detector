@@ -44,19 +44,19 @@ def get_output_json(classifier_output):
       "class_name": class_names[classifier_output[0]],
       "meta": [
          {
-            "prbability": classifier_output[1][0].astype(float),
+            "probability": classifier_output[1][0].astype(float),
             "class" : class_names[0]
          },
          {
-            "prbability": classifier_output[1][1].astype(float),
+            "probability": classifier_output[1][1].astype(float),
             "class" : class_names[1]
          },
          {
-            "prbability": classifier_output[1][2].astype(float),
+            "probability": classifier_output[1][2].astype(float),
             "class" : class_names[2]
          },
          {
-            "prbability": classifier_output[1][3].astype(float),
+            "probability": classifier_output[1][3].astype(float),
             "class" : class_names[3]
          }
       ]
