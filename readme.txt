@@ -11,7 +11,7 @@ to run the project please follow the instructions:
                 train_test_ratio : the train set to test set ratio 
         2.b after running the first cell, you will need to load the images, to do this, run the second
             cell
-        2.c the 3rd cell, just defines some functions, and tests thems
+        2.c the 3rd cell, just defines some functions, and tests them
         2.d running the 4th cell will extract all features from images (this can be skipped if you plan to
             use pre-built models)
         2.e for the next two cells, you have option between the following:
