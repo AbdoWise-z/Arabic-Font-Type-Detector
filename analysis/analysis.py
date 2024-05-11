@@ -63,8 +63,8 @@ for img_path in images_paths:
     start = time.time()
     prediction , _ = utils.classify_image(img , kmeans , clf)
     delta = time.time() - start
-    print(f"Prediction for: \"{img_path}.jpeg\" = {prediction}  , in {delta:.10f} seconds")
-    timimg_file.write(f"{delta:.10f}\n")
+    print(f"Prediction for: \"{img_path}.jpeg\" = {prediction}  , in {delta:.3f} seconds")
+    timimg_file.write(f"{delta:.3f}\n")
     results_file.write(f"{3 - prediction}\n")
 
 timimg_file.close()
